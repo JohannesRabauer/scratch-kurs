@@ -1,7 +1,7 @@
 # Anleitungskarten "Der Fisch in der Waldnaab"
 
 > **Hinweis für Johannes (nicht mit ausdrucken):**
-> Fünf Karten, je eine pro Bauschritt (A–E aus dem [Ablaufplan](ablaufplan.md)). Jede Karte hat eine **Vorderseite** (Aufgabe, für die Kinder zum Selbermachen) und eine **Rückseite** (Lösung zum Nachschauen). Am besten doppelseitig drucken, sodass beim Wenden am **kurzen** Rand ("Umschlagen an der kurzen Kante" in den Druckereinstellungen) Vorder- und Rückseite jeder Karte zusammenpassen.
+> Sechs Karten, je eine pro Bauschritt (A–F aus dem [Ablaufplan](ablaufplan.md); Karte F ist der Profi-Bonus mit der Ente für die schnellsten Kinder). Jede Karte hat eine **Vorderseite** (Aufgabe, für die Kinder zum Selbermachen) und eine **Rückseite** (Lösung zum Nachschauen). Am besten doppelseitig drucken, sodass beim Wenden am **kurzen** Rand ("Umschlagen an der kurzen Kante" in den Druckereinstellungen) Vorder- und Rückseite jeder Karte zusammenpassen.
 >
 > An zwei Stellen musst du vor dem Drucken noch echte Werte eintragen, weil sie von eurem fertigen Startprojekt abhängen (Startposition des Fischs, Ufer-Farbe): markiert mit **⚙️ Vor dem Ausdrucken anpassen**.
 >
@@ -232,3 +232,54 @@ Klick wieder deine Fisch-Figur an. Baue einen **dritten** `falls...dann`-Block i
 **Geschafft-Skript merken:** Achte darauf, dass dieser neue Block **vor** dem "Geschafft!"-Block aus Schritt D steht, sonst könnte es komisch aussehen, wenn beides gleichzeitig passiert.
 
 🖼️ *[Platz für Screenshot: fertiges Fisch-Skript mit allen drei falls-Blöcken]*
+
+---
+---
+
+## Karte F – Vorderseite
+
+# 🐟 Schritt F: Profi-Bonus – die Ente patrouilliert!
+
+**Nur für echte Profis, die auch mit der Angel schon fertig sind!** Jetzt kommt ein zweites Hindernis dazu: eine Ente 🦆, die zwischen Ufer und Ufer hin- und herschwimmt.
+
+**So gehst du vor:**
+
+**Teil 1 – die Ente bewegt sich von selbst:**
+Klick die Ente-Figur an und bau **nach genau demselben Muster wie bei der Angel** in Schritt E:
+1. Kategorie **🟡 Ereignisse**: `wenn grüne Fahne 🟢 angeklickt wird`
+2. Kategorie **🟠 Steuerung**: `wiederhole fortlaufend`
+3. Darin: Kategorie **🔵 Bewegung**: `gehe ( ) Schritte` und `pralle vom Rand ab`
+
+**Tipp:** Damit die Ente **hoch und runter** statt links-rechts patrouilliert (spannender, weil anders als die Angel!), ergänze vor der Dauerschleife noch: Kategorie **🔵 Bewegung** → Block `setze Richtung auf ( ) Grad` mit dem Wert `0`.
+
+**Teil 2 – wenn der Fisch die Ente berührt, geht's zurück zum Start:**
+Klick wieder deine Fisch-Figur an. Baue einen **vierten** `falls...dann`-Block in deine bestehende Dauerschleife — genau nach demselben Muster wie bei Ufer und Angel, nur diesmal mit "wird Ente berührt?".
+
+🖼️ *[Platz für Screenshot: Ente-Figur mit eigenem Bewegungsskript]*
+
+---
+
+## Karte F – Rückseite
+
+# 🔑 Lösung – Schritt F
+
+**Skript auf der Ente-Figur:**
+
+```
+🟡 wenn grüne Fahne 🟢 angeklickt wird
+🔵 setze Richtung auf (0) Grad
+🟠 wiederhole fortlaufend
+    🔵 gehe (4) Schritte
+    🔵 pralle vom Rand ab
+```
+
+**Ergänzung auf der Fisch-Figur**, vierter `falls...dann` in der bekannten Dauerschleife:
+
+```
+    🟠 falls < 🔷 wird [Ente] berührt? >, dann
+        🔵 gehe zu x: (⚙️ Start-x) y: (⚙️ Start-y)
+```
+
+**Profi-Tipp:** Jetzt hat dein Fisch zwei Gegner gleichzeitig im Weg — Angel **und** Ente. Wenn das zu leicht ist: Erhöh einfach die Zahl bei `gehe ( ) Schritte` bei beiden, damit sie schneller patrouillieren!
+
+🖼️ *[Platz für Screenshot: fertiges Fisch-Skript mit allen vier falls-Blöcken]*

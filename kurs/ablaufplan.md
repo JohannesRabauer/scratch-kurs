@@ -57,8 +57,9 @@ Kinder spielen ihr Spiel von Start bis Ziel einmal komplett durch.
 → **Erfolgserlebnis:** Das Spiel ist ab hier fertig und spielbar — jedes Kind hat spätestens jetzt ein lauffähiges Ergebnis, unabhängig vom weiteren Tempo.
 
 ### Schritt E – Differenzierung nach Tempo (15 Min. | 1:15–1:30)
-- **Kinder, die fertig sind:** Erweiterung mit einem beweglichen Gegner (z. B. Ente oder Angelhaken, die sich hin- und herbewegt und bei Berührung ebenfalls zum Start zurückschickt)
-- **Kinder, die noch an Schritt C/D arbeiten:** gezielte Einzelbetreuung, Fokus liegt darauf, dass am Ende **jedes** Kind ein spielbares Basis-Spiel hat — die Gegner-Erweiterung ist optional, kein Muss
+- **Kinder, die fertig sind:** Erweiterung mit einem beweglichen Gegner — die Angel 🎣, die sich hin- und herbewegt und bei Berührung ebenfalls zum Start zurückschickt
+- **Besonders fortgeschrittene Kinder, die auch damit schon fertig sind:** zweite Erweiterungsstufe mit einer patrouillierenden Ente 🦆 als zusätzlichem Hindernis (gleiches Baumuster wie bei der Angel, siehe Anleitungskarte F) — hält die schnellsten Kinder beschäftigt, ohne dass jemand auf sie warten muss
+- **Kinder, die noch an Schritt C/D arbeiten:** gezielte Einzelbetreuung, Fokus liegt darauf, dass am Ende **jedes** Kind ein spielbares Basis-Spiel hat — die Gegner-Erweiterungen sind optional, kein Muss
 
 **Didaktischer Hinweis:** Diese Stufe ist bewusst als Sicherheitsnetz eingebaut: Sie verhindert, dass schnelle Kinder warten müssen und langsamere Kinder unter Zeitdruck geraten. Das Kursziel ("jeder hat ein funktionierendes Spiel") bleibt für alle erreichbar.
 
