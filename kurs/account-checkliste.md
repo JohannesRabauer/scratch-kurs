@@ -1,10 +1,10 @@
 # Checkliste: Scratch-Accounts einrichten (nur für Johannes)
 
-Diese Schritte machst du selbst direkt auf [scratch.mit.edu](https://scratch.mit.edu) — ich kann/darf das nicht für dich erledigen (Kontoerstellung/Login-Daten sind nicht etwas, das ich automatisiert anlegen sollte). Hier steht aber genau, was zu tun ist.
+Diese Schritte machst du selbst direkt auf [scratch.mit.edu](https://scratch.mit.edu) — Konten und Login-Daten sollte ich nicht automatisiert für dich anlegen. Hier steht aber genau, was zu tun ist.
 
 ## ⏰ Zuerst: Zeitpuffer einplanen!
 
-- [ ] **Mindestens 1–2 Wochen vor dem Kurs** starten. Ein Scratch-**Lehrer-Konto** ("Scratch für Pädagog:innen") muss beantragt und vom Scratch-Team **geprüft/freigegeben** werden — das ist kein Sofort-Login wie ein normales Konto und kann ein paar Tage dauern.
+- [ ] **Mindestens 1–2 Wochen vor dem Kurs** starten. Das Scratch-Team prüft und gibt jedes Scratch-**Lehrer-Konto** ("Scratch für Pädagog:innen") erst frei — anders als bei einem normalen Konto gibt es hier kein Sofort-Login, das kann ein paar Tage dauern.
 - [ ] Falls die Freigabe sich verzögert: Scratch-Support kontaktieren oder rechtzeitig Alternativtermin für den Antrag einplanen.
 
 ## 1. Lehrer-Konto beantragen
@@ -45,4 +45,4 @@ Diese Schritte machst du selbst direkt auf [scratch.mit.edu](https://scratch.mit
 
 ## Danach
 
-- [ ] Konten müssen nach dem Kurs nicht gelöscht werden — Kinder können sich mit denselben Zugangsdaten später zuhause wieder einloggen und am Spiel weiterbauen (im Ablaufplan als Abschied erwähnt)
+- [ ] Du musst die Konten nach dem Kurs nicht löschen — die Kinder können sich mit denselben Zugangsdaten später zuhause wieder einloggen und am Spiel weiterbauen (im Ablaufplan als Abschied erwähnt)

@@ -23,11 +23,11 @@ Didaktisches Prinzip durchgehend: **"Ich mach vor – wir machen zusammen – du
 
 | Zeit | Inhalt | Methode |
 |---|---|---|
-| 0:00–0:05 | Begrüßung, kurze Vorstellungsrunde, Ankündigung: "Heute baut ihr euer eigenes Fisch-Spiel und nehmt es mit nach Hause" | Plenum, motivierend, konkret |
-| 0:05–0:10 | Login mit dem Zugangs-Zettel, technischer Check | Einzelbetreuung, jedes Kind wird kurz bestätigt |
+| 0:00–0:05 | Begrüßung, kurze Vorstellungsrunde, Ankündigung: "Heute baut ihr euer eigenes Fisch-Spiel und nehmt es mit nach Hause" | Plenum, kurz und konkret |
+| 0:05–0:10 | Login mit dem Zugangs-Zettel, technischer Check | Einzelbetreuung, jedes Kind kurz bestätigen |
 | 0:10–0:15 | Ganz knappe Scratch-Tour: Bühne, Figur, Kostüme, Blockpalette, grüne Flagge/Stopp-Zeichen – nur was gleich gebraucht wird | Zeigen am Beamer/Bildschirm, keine Details, die erst später relevant werden |
 
-**Didaktischer Hinweis:** Keine vollständige Werkzeugerklärung. Kinder in diesem Alter verlieren nach 2–3 Minuten reiner Erklärung die Aufmerksamkeit — jedes weitere Werkzeug wird erst im Moment des Bedarfs erklärt (Just-in-time).
+**Didaktischer Hinweis:** Keine vollständige Werkzeugerklärung. Kinder in diesem Alter verlieren nach 2–3 Minuten reiner Erklärung die Aufmerksamkeit — jedes weitere Werkzeug erklärst du erst dann, wenn sie es brauchen (just-in-time).
 
 ---
 
@@ -61,7 +61,7 @@ Kinder spielen ihr Spiel von Start bis Ziel einmal komplett durch.
 - **Besonders fortgeschrittene Kinder, die auch damit schon fertig sind:** zweite Erweiterungsstufe mit einer patrouillierenden Ente 🦆 als zusätzlichem Hindernis (gleiches Baumuster wie bei der Angel, siehe Anleitungskarte F) — hält die schnellsten Kinder beschäftigt, ohne dass jemand auf sie warten muss
 - **Kinder, die noch an Schritt C/D arbeiten:** gezielte Einzelbetreuung, Fokus liegt darauf, dass am Ende **jedes** Kind ein spielbares Basis-Spiel hat — die Gegner-Erweiterungen sind optional, kein Muss
 
-**Didaktischer Hinweis:** Diese Stufe ist bewusst als Sicherheitsnetz eingebaut: Sie verhindert, dass schnelle Kinder warten müssen und langsamere Kinder unter Zeitdruck geraten. Das Kursziel ("jeder hat ein funktionierendes Spiel") bleibt für alle erreichbar.
+**Didaktischer Hinweis:** Diese Stufe wirkt als Sicherheitsnetz: Sie verhindert, dass schnelle Kinder warten müssen und langsamere unter Zeitdruck geraten. Das Kursziel — jeder hat ein funktionierendes Spiel — bleibt für alle erreichbar.
 
 ---
 
@@ -80,7 +80,7 @@ Verabschiedung, Hinweis, dass das Spiel im Scratch-Account gespeichert bleibt un
 
 ## Zeitpuffer-Strategie
 
-Die Pause (0:40–0:50) und Schritt E (0:15–1:30) sind die flexibelsten Blöcke — hier lässt sich Zeit einsparen, falls Login/Einstieg länger dauert, oder Zeit dranhängen, falls Schritt C mehr Begleitung braucht als geplant. Schritt D (Ziel erkennen) sollte spätestens um 1:20 erreicht sein, damit die Abschluss-Phase nicht gekürzt werden muss — die Urkundenübergabe ist der emotionale Abschluss des Kurses und sollte nicht wegfallen.
+Die Pause (0:40–0:50) und Schritt E (0:15–1:30) sind die flexibelsten Blöcke — hier lässt sich Zeit einsparen, falls Login/Einstieg länger dauert, oder Zeit dranhängen, falls Schritt C mehr Begleitung braucht als geplant. Schritt D (Ziel erkennen) sollte spätestens um 1:20 erreicht sein, damit die Abschluss-Phase in voller Länge bleibt — die Urkundenübergabe ist der emotionale Höhepunkt und darf nicht wegfallen.
 
 ## Offene Punkte / nächste Schritte
 
