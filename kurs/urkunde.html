@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Urkunde – Der Fisch in der Waldnaab</title>
+<style>
+  @page {
+    size: A4 landscape;
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #dfeef8;
+  }
+
+  body {
+    font-family: "Comic Sans MS", "Comic Sans", "Segoe Print", "Chalkboard SE", cursive, sans-serif;
+    color: #222222;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    width: 297mm;
+    height: 210mm;
+    margin: 0 auto;
+    padding: 12mm;
+    background: #dfeef8;
+  }
+
+  .frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background:
+      linear-gradient(rgba(234, 246, 255, 0.88), rgba(234, 246, 255, 0.88)),
+      url("../Spielplatz.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 5px double #1b6fa8;
+    border-radius: 10px;
+    padding: 10mm 16mm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  /* decorative corner fish, mirrored on the right */
+  .fish {
+    position: absolute;
+    width: 46mm;
+    height: auto;
+    opacity: 0.9;
+  }
+  .fish.top-left {
+    top: -6mm;
+    left: -10mm;
+    transform: rotate(-8deg);
+  }
+  .fish.bottom-right {
+    bottom: -6mm;
+    right: -10mm;
+    transform: scaleX(-1) rotate(-8deg);
+  }
+
+  .angel {
+    position: absolute;
+    top: 6mm;
+    right: 10mm;
+    width: 26mm;
+    height: auto;
+    opacity: 0.9;
+  }
+
+  .duck {
+    position: absolute;
+    bottom: 6mm;
+    left: 10mm;
+    width: 24mm;
+    height: auto;
+    opacity: 0.9;
+  }
+
+  .wave-row {
+    font-size: 20pt;
+    letter-spacing: 4px;
+    margin-top: 2mm;
+  }
+
+  h1 {
+    font-size: 34pt;
+    margin: 4mm 0 2mm;
+    color: #1b6fa8;
+  }
+
+  .subtitle {
+    font-size: 14pt;
+    margin: 0 0 1mm;
+    max-width: 190mm;
+  }
+
+  .subtitle .kursname {
+    font-weight: bold;
+  }
+
+  .verliehen {
+    font-size: 13pt;
+    margin: 6mm 0 2mm;
+  }
+
+  .name-line {
+    width: 150mm;
+    border-bottom: 1px solid #222222;
+    margin: 2mm auto 7mm;
+    height: 14mm;
+  }
+
+  .beschreibung {
+    font-size: 13pt;
+    max-width: 190mm;
+    line-height: 1.5;
+    margin: 0 auto 4mm;
+  }
+
+  .stars {
+    font-size: 16pt;
+    letter-spacing: 6px;
+    margin: 2mm 0 8mm;
+  }
+
+  .signatures {
+    margin-top: auto;
+    width: 100%;
+    max-width: 200mm;
+    display: flex;
+    justify-content: space-between;
+    gap: 20mm;
+  }
+
+  .signature {
+    flex: 1;
+    text-align: center;
+  }
+
+  .signature .line {
+    border-bottom: 1px solid #222222;
+    height: 12mm;
+  }
+
+  .signature .caption {
+    font-size: 10.5pt;
+    margin-top: 1.5mm;
+  }
+
+  @media print {
+    body {
+      background: #ffffff;
+    }
+    .page {
+      width: auto;
+      height: auto;
+      padding: 0;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="frame">
+      <img class="fish top-left" src="../Fisch.png" alt="">
+      <img class="fish bottom-right" src="../Fisch.png" alt="">
+      <img class="angel" src="../Angel.png" alt="">
+      <img class="duck" src="../AngryDuck.png" alt="">
+
+      <div class="wave-row">🐟 🌊 🌊 🐟</div>
+      <h1>🏆 URKUNDE 🏆</h1>
+
+      <p class="subtitle">
+        für die erfolgreiche Teilnahme am Scratch-Kurs<br>
+        <span class="kursname">„Der Fisch in der Waldnaab“</span>
+      </p>
+
+      <p class="verliehen">verliehen an</p>
+      <div class="name-line"></div>
+
+      <p class="beschreibung">
+        hat heute sein erstes eigenes Computerspiel mit Scratch programmiert,
+        vom ersten Baustein bis zum fertigen Spiel. Herzlichen Glückwunsch! 🎉
+      </p>
+
+      <div class="stars">⭐ 🐟 ⭐ 🐟 ⭐</div>
+
+      <div class="signatures">
+        <div class="signature">
+          <div class="line"></div>
+          <div class="caption">Ort, Datum</div>
+        </div>
+        <div class="signature">
+          <div class="line"></div>
+          <div class="caption">Johannes Rabauer<br>Kursleiter</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
