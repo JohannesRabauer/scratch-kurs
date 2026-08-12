@@ -198,6 +198,18 @@
     margin-top: 1.5mm;
   }
 
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
   @media print {
     body {
       background: #ffffff;
@@ -218,7 +230,7 @@
       <div class="bubble b3" aria-hidden="true"></div>
 
       <div class="emoji-row" aria-hidden="true">🐟 🌊 🐠 🌊 🐟</div>
-      <h1>🏆 URKUNDE 🏆</h1>
+      <h1><span aria-hidden="true">🏆 </span>URKUNDE<span aria-hidden="true"> 🏆</span></h1>
       <p class="badge">Scratch-Abenteuer erfolgreich gemeistert</p>
 
       <p class="subtitle">
@@ -227,7 +239,8 @@
       </p>
 
       <p class="verliehen">verliehen an</p>
-      <div class="name-box" role="region" aria-label="Name des Kindes">
+      <div class="name-box">
+        <span class="sr-only">Freies Feld für den handschriftlichen Namen des Kindes</span>
         <div class="name-hint"></div>
       </div>
 
