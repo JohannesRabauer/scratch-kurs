@@ -52,6 +52,7 @@
     align-items: center;
     text-align: center;
     overflow: hidden;
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.75);
   }
 
   /* decorative corner fish, mirrored on the right */
@@ -93,13 +94,14 @@
   .wave-row {
     font-size: 20pt;
     letter-spacing: 4px;
-    margin-top: 2mm;
+    margin-top: 4mm;
   }
 
   h1 {
     font-size: 34pt;
     margin: 4mm 0 2mm;
     color: #1b6fa8;
+    text-shadow: 0 1px 0 #ffffff, 0 3px 8px rgba(27, 111, 168, 0.25);
   }
 
   .subtitle {
@@ -134,7 +136,46 @@
   .stars {
     font-size: 16pt;
     letter-spacing: 6px;
-    margin: 2mm 0 8mm;
+    margin: 3mm 0 7mm;
+  }
+
+  .map-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 3mm;
+    margin: 3mm 0 1mm;
+    padding: 2mm 4mm;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid rgba(27, 111, 168, 0.25);
+    box-shadow: 0 2px 8px rgba(27, 111, 168, 0.12);
+    font-size: 11.5pt;
+    color: #0f4f78;
+  }
+
+  .map-badge img {
+    width: 11mm;
+    height: 11mm;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid rgba(27, 111, 168, 0.35);
+  }
+
+  .game-icons {
+    display: flex;
+    justify-content: center;
+    gap: 5mm;
+    margin: 1mm 0 4mm;
+  }
+
+  .game-icons img {
+    width: 15mm;
+    height: 15mm;
+    object-fit: contain;
+    border-radius: 4mm;
+    padding: 1.5mm;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(27, 111, 168, 0.22);
   }
 
   .signatures {
@@ -189,6 +230,11 @@
         <span class="kursname">„Der Fisch in der Waldnaab“</span>
       </p>
 
+      <div class="map-badge">
+        <img src="../Spielplatz.png" alt="">
+        <span>Spielziel: Abenteuerspielplatz erreicht</span>
+      </div>
+
       <p class="verliehen">verliehen an</p>
       <div class="name-line"></div>
 
@@ -196,6 +242,12 @@
         hat heute ein eigenes Computerspiel mit Scratch programmiert,
         vom ersten Baustein bis zum fertigen Spiel. Herzlichen Glückwunsch! 🎉
       </p>
+
+      <div class="game-icons">
+        <img src="../Fisch.png" alt="">
+        <img src="../Angel.png" alt="">
+        <img src="../AngryDuck.png" alt="">
+      </div>
 
       <div class="stars">⭐ 🐟 ⭐ 🐟 ⭐</div>
 
