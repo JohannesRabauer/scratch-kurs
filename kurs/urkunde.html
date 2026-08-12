@@ -16,12 +16,12 @@
   html, body {
     margin: 0;
     padding: 0;
-    background: #dfeef8;
+    background: #ecf6ff;
   }
 
   body {
-    font-family: "Comic Sans MS", "Comic Sans", "Segoe Print", "Chalkboard SE", cursive, sans-serif;
-    color: #222222;
+    font-family: "Nunito", "Avenir Next", "Segoe UI", "Trebuchet MS", sans-serif;
+    color: #14324b;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
@@ -30,152 +30,146 @@
     width: 297mm;
     height: 210mm;
     margin: 0 auto;
-    padding: 12mm;
-    background: #dfeef8;
+    padding: 10mm;
+    background: linear-gradient(160deg, #e7f5ff 0%, #dff7ff 45%, #f5fbff 100%);
   }
 
   .frame {
     position: relative;
     width: 100%;
     height: 100%;
+    border: 4px solid #1f95d7;
+    border-radius: 16px;
     background:
-      linear-gradient(rgba(244, 250, 255, 0.93), rgba(244, 250, 255, 0.93)),
-      url("../Spielplatz.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 5px double #1b6fa8;
-    border-radius: 10px;
-    padding: 10mm 16mm;
+      radial-gradient(circle at 15% 12%, rgba(113, 213, 255, 0.45) 0, rgba(113, 213, 255, 0) 24%),
+      radial-gradient(circle at 84% 10%, rgba(255, 204, 89, 0.42) 0, rgba(255, 204, 89, 0) 20%),
+      radial-gradient(circle at 90% 88%, rgba(121, 228, 157, 0.44) 0, rgba(121, 228, 157, 0) 24%),
+      linear-gradient(180deg, #ffffff 0%, #f0faff 100%);
+    padding: 11mm 16mm 10mm;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     overflow: hidden;
-    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.75);
+    box-shadow:
+      inset 0 0 0 2px rgba(255, 255, 255, 0.8),
+      0 8px 20px rgba(12, 84, 128, 0.15);
   }
 
-  /* decorative corner fish, mirrored on the right */
-  .fish {
+  .bubble {
     position: absolute;
-    width: 46mm;
-    height: auto;
-    opacity: 0.9;
+    border-radius: 50%;
+    border: 1px solid rgba(31, 149, 215, 0.28);
+    background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.9), rgba(173, 231, 255, 0.35));
   }
-  .fish.top-left {
-    top: -6mm;
-    left: -10mm;
-    transform: rotate(-8deg);
+  .bubble.b1 {
+    width: 18mm;
+    height: 18mm;
+    top: 9mm;
+    left: 14mm;
   }
-  .fish.bottom-right {
-    bottom: -6mm;
-    right: -10mm;
-    transform: scaleX(-1) rotate(-8deg);
+  .bubble.b2 {
+    width: 10mm;
+    height: 10mm;
+    top: 18mm;
+    left: 30mm;
   }
-
-  .angel {
-    position: absolute;
-    top: 6mm;
-    right: 10mm;
-    width: 26mm;
-    height: auto;
-    opacity: 0.9;
-  }
-
-  .duck {
-    position: absolute;
-    bottom: 6mm;
-    left: 10mm;
-    width: 24mm;
-    height: auto;
-    opacity: 0.9;
+  .bubble.b3 {
+    width: 13mm;
+    height: 13mm;
+    right: 24mm;
+    bottom: 18mm;
   }
 
-  .wave-row {
-    font-size: 20pt;
-    letter-spacing: 4px;
-    margin-top: 4mm;
+  .emoji-row {
+    font-size: 18pt;
+    letter-spacing: 3px;
+    margin-top: 2mm;
+  }
+
+  .badge {
+    margin-top: 2.5mm;
+    padding: 2.4mm 8mm;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #31b8f2, #3e98f0);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 11pt;
+    letter-spacing: 0.3px;
+    box-shadow: 0 4px 10px rgba(24, 132, 201, 0.35);
   }
 
   h1 {
-    font-size: 34pt;
+    font-size: 33pt;
     margin: 4mm 0 2mm;
-    color: #1b6fa8;
-    text-shadow: 0 1px 0 #ffffff, 0 3px 8px rgba(27, 111, 168, 0.25);
+    color: #1179b6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 0 #ffffff, 0 4px 10px rgba(17, 121, 182, 0.22);
   }
 
   .subtitle {
-    font-size: 14pt;
-    margin: 0 0 1mm;
-    max-width: 190mm;
+    font-size: 13.5pt;
+    margin: 0 0 2mm;
+    max-width: 220mm;
+    line-height: 1.45;
   }
 
   .subtitle .kursname {
-    font-weight: bold;
+    display: inline-block;
+    margin-top: 1mm;
+    font-size: 16pt;
+    font-weight: 800;
+    color: #0a688f;
   }
 
   .verliehen {
     font-size: 13pt;
-    margin: 6mm 0 2mm;
+    margin: 5mm 0 2.5mm;
+    color: #24536f;
+    font-weight: 700;
   }
 
-  .name-line {
-    width: 150mm;
-    border-bottom: 1px solid #222222;
-    margin: 2mm auto 7mm;
-    height: 14mm;
+  .name-box {
+    width: 230mm;
+    min-height: 28mm;
+    margin: 0 auto 6mm;
+    border: 2.5px dashed #2a95c7;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 4mm 6mm;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.8);
+  }
+
+  .name-hint {
+    width: 100%;
+    border-bottom: 1px solid rgba(20, 50, 75, 0.4);
+    height: 15mm;
   }
 
   .beschreibung {
     font-size: 13pt;
-    max-width: 190mm;
-    line-height: 1.5;
+    max-width: 220mm;
+    line-height: 1.45;
     margin: 0 auto 4mm;
   }
 
-  .stars {
-    font-size: 16pt;
-    letter-spacing: 6px;
-    margin: 3mm 0 7mm;
-  }
-
-  .map-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 3mm;
-    margin: 3mm 0 1mm;
-    padding: 2mm 4mm;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.82);
-    border: 1px solid rgba(27, 111, 168, 0.25);
-    box-shadow: 0 2px 8px rgba(27, 111, 168, 0.12);
-    font-size: 11.5pt;
-    color: #0f4f78;
-  }
-
-  .map-badge img {
-    width: 11mm;
-    height: 11mm;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 1px solid rgba(27, 111, 168, 0.35);
-  }
-
-  .game-icons {
+  .icon-pills {
     display: flex;
-    justify-content: center;
-    gap: 5mm;
-    margin: 1mm 0 4mm;
+    gap: 4mm;
+    margin: 1.5mm 0 5mm;
   }
 
-  .game-icons img {
-    width: 15mm;
-    height: 15mm;
-    object-fit: contain;
-    border-radius: 4mm;
-    padding: 1.5mm;
-    background: rgba(255, 255, 255, 0.72);
-    border: 1px solid rgba(27, 111, 168, 0.22);
+  .pill {
+    padding: 2.2mm 4.8mm;
+    border-radius: 999px;
+    border: 1px solid rgba(35, 110, 156, 0.22);
+    background: rgba(255, 255, 255, 0.86);
+    font-size: 11.5pt;
+    color: #1e5979;
   }
 
   .signatures {
@@ -193,7 +187,7 @@
   }
 
   .signature .line {
-    border-bottom: 1px solid #222222;
+    border-bottom: 1px solid rgba(20, 50, 75, 0.7);
     height: 12mm;
   }
 
@@ -217,12 +211,12 @@
 <body>
   <div class="page">
     <div class="frame">
-      <img class="fish top-left" src="../Fisch.png" alt="">
-      <img class="fish bottom-right" src="../Fisch.png" alt="">
-      <img class="angel" src="../Angel.png" alt="">
-      <img class="duck" src="../AngryDuck.png" alt="">
+      <div class="bubble b1" aria-hidden="true"></div>
+      <div class="bubble b2" aria-hidden="true"></div>
+      <div class="bubble b3" aria-hidden="true"></div>
 
-      <div class="wave-row">🐟 🌊 🌊 🐟</div>
+      <div class="emoji-row">🐟 🌊 🐠 🌊 🐟</div>
+      <div class="badge">Scratch-Abenteuer erfolgreich gemeistert</div>
       <h1>🏆 URKUNDE 🏆</h1>
 
       <p class="subtitle">
@@ -230,26 +224,21 @@
         <span class="kursname">„Der Fisch in der Waldnaab“</span>
       </p>
 
-      <div class="map-badge">
-        <img src="../Spielplatz.png" alt="Abenteuerspielplatz">
-        <span>Spielziel: Abenteuerspielplatz erreicht</span>
-      </div>
-
       <p class="verliehen">verliehen an</p>
-      <div class="name-line"></div>
+      <div class="name-box">
+        <div class="name-hint"></div>
+      </div>
 
       <p class="beschreibung">
         hat heute ein eigenes Computerspiel mit Scratch programmiert,
         vom ersten Baustein bis zum fertigen Spiel. Herzlichen Glückwunsch! 🎉
       </p>
 
-      <div class="game-icons">
-        <img src="../Fisch.png" alt="Fisch">
-        <img src="../Angel.png" alt="Angel">
-        <img src="../AngryDuck.png" alt="Ente">
+      <div class="icon-pills" aria-hidden="true">
+        <span class="pill">🐟 Fisch</span>
+        <span class="pill">🪝 Hindernisse</span>
+        <span class="pill">🛝 Ziel erreicht</span>
       </div>
-
-      <div class="stars">⭐ 🐟 ⭐ 🐟 ⭐</div>
 
       <div class="signatures">
         <div class="signature">
