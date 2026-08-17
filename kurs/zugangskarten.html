@@ -138,6 +138,19 @@
     font-size: 9pt;
   }
 
+  .card .info .links {
+    margin-top: 1.5mm;
+    padding-top: 1.5mm;
+    border-top: 1px dashed #9fc7e0;
+  }
+
+  .card .info .links a {
+    display: block;
+    font-size: 8.5pt;
+    color: #1b6fa8;
+    text-decoration: none;
+  }
+
   @media print {
     body {
       background: #ffffff;
@@ -212,7 +225,11 @@
       '<div class="field">Benutzername</div>' +
       '<div class="value">' + user.username + '</div>' +
       '<div class="field">Passwort</div>' +
-      '<div class="value">' + user.password + '</div>';
+      '<div class="value">' + user.password + '</div>' +
+      '<div class="links">' +
+      '<a href="https://scratch.mit.edu/">🔑 Login: scratch.mit.edu</a>' +
+      '<a href="https://johannesrabauer.github.io/scratch-kurs/">📄 Anleitung für später</a>' +
+      '</div>';
     card.appendChild(info);
 
     return card;
