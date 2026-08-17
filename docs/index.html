@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Der Fisch in der Waldnaab – Scratch-Kurs</title>
+<style>
+  :root {
+    --water: #1e88c7;
+    --water-dark: #14608f;
+    --forest: #2f7d4f;
+    --forest-dark: #1f5c38;
+    --sand: #f4ecd8;
+    --paper: #ffffff;
+    --ink: #1c2b2a;
+    --ink-soft: #4a5a58;
+    --accent: #ffb703;
+    --radius: 18px;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
+    background: var(--sand);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+
+  header.hero {
+    background: linear-gradient(180deg, var(--water) 0%, var(--water-dark) 100%);
+    color: white;
+    padding: 3rem 1.5rem 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header.hero h1 {
+    margin: 0 0 0.5rem;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+  }
+
+  header.hero p.subtitle {
+    margin: 0;
+    font-size: 1.15rem;
+    opacity: 0.95;
+  }
+
+  header.hero .hero-fish {
+    width: 90px;
+    height: auto;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.25));
+  }
+
+  main {
+    max-width: 880px;
+    margin: -2.5rem auto 0;
+    padding: 0 1.25rem 3rem;
+  }
+
+  section.card {
+    background: var(--paper);
+    border-radius: var(--radius);
+    padding: 2rem;
+    margin-bottom: 1.75rem;
+    box-shadow: 0 10px 30px rgba(20, 60, 80, 0.12);
+  }
+
+  section.card h2 {
+    margin-top: 0;
+    color: var(--forest-dark);
+    font-size: 1.4rem;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+
+  .gallery figure {
+    margin: 0;
+    text-align: center;
+    width: 140px;
+  }
+
+  .gallery img {
+    max-width: 100%;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  .gallery figcaption {
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+  }
+
+  .playground-banner {
+    width: 100%;
+    max-height: 260px;
+    object-fit: cover;
+    border-radius: calc(var(--radius) - 6px);
+    display: block;
+    margin-top: 1.25rem;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.85rem 1.6rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .btn:hover { transform: translateY(-2px); }
+
+  .btn-primary {
+    background: var(--accent);
+    color: #3a2600;
+    box-shadow: 0 6px 16px rgba(255, 183, 3, 0.4);
+  }
+
+  .btn-secondary {
+    background: var(--forest);
+    color: white;
+    box-shadow: 0 6px 16px rgba(47, 125, 79, 0.35);
+  }
+
+  .btn-row {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .file-meta {
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    margin-top: 0.75rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    color: var(--ink-soft);
+    font-size: 0.85rem;
+  }
+
+  footer a { color: var(--forest-dark); }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img class="hero-fish" src="assets/fisch.png" alt="Der Fisch aus dem Scratch-Spiel">
+  <h1>Der Fisch in der Waldnaab</h1>
+  <p class="subtitle">Ein Scratch-Kurs für Kinder von 8–12 Jahren</p>
+</header>
+
+<main>
+
+  <section class="card">
+    <h2>🎮 Um das Spiel geht's</h2>
+    <p>
+      Im Kurs baut jedes Kind sein eigenes kleines Computerspiel mit
+      <a href="https://scratch.mit.edu" target="_blank" rel="noopener">Scratch</a>:
+      Ein Fisch schwimmt die Waldnaab hinauf bis zum Abenteuerspielplatz.
+      Berührt er das Ufer, schwimmt er zurück an den Start. Wer schnell ist,
+      baut zusätzliche Hindernisse ein – eine Angel und eine patrouillierende Ente.
+    </p>
+    <img class="playground-banner" src="assets/spielplatz.png" alt="Der Abenteuerspielplatz als Ziel des Spiels">
+    <div class="gallery">
+      <figure>
+        <img src="assets/fisch.png" alt="Der Fisch">
+        <figcaption>Der Fisch, den man steuert</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/angel.png" alt="Die Angel als Hindernis">
+        <figcaption>Die Angel – Hindernis Stufe 1</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/angryduck.png" alt="Die patrouillierende Ente">
+        <figcaption>Die Ente – Hindernis Stufe 2</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>📄 Anleitung zum Mitnehmen</h2>
+    <p>
+      Die Anleitungskarten führen Schritt für Schritt durchs Bauen des Spiels –
+      mit Aufgabe auf der Vorderseite und Lösung zum Nachschauen auf der Rückseite.
+    </p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="anleitung-karten.pdf" download>⬇️ Anleitung als PDF herunterladen</a>
+    </div>
+    <p class="file-meta">PDF, zum Ausdrucken geeignet.</p>
+  </section>
+
+  <section class="card">
+    <h2>🔑 Bei Scratch anmelden</h2>
+    <p>
+      Zum Programmieren braucht ihr einen Scratch-Account. Falls ihr schon einen
+      Zugangs-Zettel vom Kurs habt, könnt ihr euch damit direkt anmelden.
+    </p>
+    <div class="btn-row">
+      <a class="btn btn-secondary" href="https://scratch.mit.edu" target="_blank" rel="noopener">🌊 Zu Scratch</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Scratch-Kurs „Der Fisch in der Waldnaab" · <a href="https://github.com/JohannesRabauer/scratch-kurs" target="_blank" rel="noopener">Projekt auf GitHub</a></p>
+</footer>
+
+</body>
+</html>
