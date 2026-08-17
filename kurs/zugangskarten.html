@@ -149,7 +149,9 @@
     font-size: 8.5pt;
     color: #1b6fa8;
     text-decoration: none;
-    word-break: break-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   @media print {
@@ -260,7 +262,19 @@
       cardsEl.appendChild(buildCard(user));
     });
 
+    cardsEl.querySelectorAll('.info .links a').forEach(shrinkToFitOneLine);
+
     statusEl.textContent = users.length + ' Zugänge geladen aus „' + sourceLabel + '“.';
+  }
+
+  function shrinkToFitOneLine(el) {
+    var size = 8.5;
+    var minSize = 5.5;
+    el.style.fontSize = size + 'pt';
+    while (el.scrollWidth > el.clientWidth && size > minSize) {
+      size -= 0.25;
+      el.style.fontSize = size + 'pt';
+    }
   }
 
   document.getElementById('csvInput').addEventListener('change', function (e) {
